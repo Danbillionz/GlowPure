@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GlowPure | Glow Naturally</title>
+
+    <meta name="description" content="Discover GlowPure natural skincare. Explore nourishing skincare essentials and find products suited to your skin.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home" class="logo">Glow<span>Pure</span></a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#consultation">Skin Consultation</a></li>
+            </ul>
+
+            <a href="#consultation" class="nav-btn">Find Your Glow</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">NATURAL CARE. BEAUTIFUL SKIN.</p>
+
+            <h1>Glow Naturally,<br>
+                <span>Feel Beautiful.</span>
+            </h1>
+
+            <p class="hero-text">
+                Give your skin the gentle care it deserves with
+                thoughtfully crafted skincare inspired by nature.
+            </p>
+
+            <a href="#products" class="primary-btn">
+                Explore Our Products
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <img src="img/hero-image.png"
+                 alt="GlowPure natural skincare products">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <p class="eyebrow">OUR PHILOSOPHY</p>
+
+        <h2>Beauty Begins With <span>Nature</span></h2>
+
+        <p>
+            At GlowPure, we believe skincare should feel simple,
+            gentle, and personal. Our brand celebrates carefully
+            selected ingredients, thoughtful formulations, and
+            skincare routines that help you feel confident in your skin.
+        </p>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <p class="eyebrow">YOUR SKINCARE ESSENTIALS</p>
+
+        <h2>Our Best Sellers</h2>
+
+        <p class="section-text">
+            Meet your new favourites for everyday self-care.
+        </p>
+
+        <div class="product-grid">
+
+            <article class="product-card">
+                <img src="img/shea-butter.png"
+                     alt="Shea butter skincare product">
+
+                <div class="product-info">
+                    <h3>Pure Shea Butter</h3>
+                    <p>Helps soften and moisturize dry skin.</p>
+                    <a href="#consultation">Find Out More</a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="img/vitamin-c-serum.png"
+                     alt="Vitamin C serum bottle">
+
+                <div class="product-info">
+                    <h3>Vitamin C Serum</h3>
+                    <p>Supports brighter-looking, radiant skin.</p>
+                    <a href="#consultation">Find Out More</a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="img/lip-balm.png"
+                     alt="Nourishing lip balm">
+
+                <div class="product-info">
+                    <h3>Natural Lip Balm</h3>
+                    <p>Helps keep lips soft and moisturized.</p>
+                    <a href="#consultation">Find Out More</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Consultation Form -->
+    <section class="consultation" id="consultation">
+        <p class="eyebrow">LET'S FIND YOUR GLOW</p>
+
+        <h2>What Does Your Skin Need?</h2>
+
+        <p class="section-text">
+            Tell us a little about your skin so we can guide you
+            towards suitable skincare options.
+        </p>
+
+        <form id="skincare-form">
+
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name"
+                       name="fullName"
+                       placeholder="Enter your full name"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="skin-type">Skin Type</label>
+                <select id="skin-type" name="skinType" required>
+                    <option value="">Choose your skin type</option>
+                    <option value="Oily">Oily</option>
+                    <option value="Dry">Dry</option>
+                    <option value="Combination">Combination</option>
+                    <option value="Sensitive">Sensitive</option>
+                </select>
+            </div>
+
+            <fieldset class="form-group">
+                <legend>What are you looking for?</legend>
+
+                <label class="checkbox-option">
+                    <input type="checkbox" name="concerns" value="Acne">
+                    Acne
+                </label>
+
+                <label class="checkbox-option">
+                    <input type="checkbox" name="concerns" value="Dark spots">
+                    Dark spots
+                </label>
+
+                <label class="checkbox-option">
+                    <input type="checkbox" name="concerns" value="Dryness">
+                    Dryness
+                </label>
+
+                <label class="checkbox-option">
+                    <input type="checkbox" name="concerns" value="Glow">
+                    Glow
+                </label>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="budget">Your Budget</label>
+                <select id="budget" name="budget" required>
+                    <option value="">Choose your budget</option>
+                    <option value="Under ₦5,000">Under ₦5,000</option>
+                    <option value="₦5,000–₦10,000">₦5,000–₦10,000</option>
+                    <option value="₦10,000–₦20,000">₦10,000–₦20,000</option>
+                    <option value="Above ₦20,000">Above ₦20,000</option>
+                </select>
+            </div>
+
+            <button type="submit" class="primary-btn">
+                Get My Skincare Recommendation
+            </button>
+
+            <p id="form-message" role="status" aria-live="polite"></p>
+
+        </form>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <p class="eyebrow">KIND WORDS</p>
+
+        <h2>Love Your Skin Journey</h2>
+
+        <div class="testimonial-grid">
+            <article class="testimonial-card">
+                <p>
+                    "I love how simple and thoughtful the GlowPure
+                    skincare experience feels. Finding products is
+                    much less overwhelming."
+                </p>
+                <h3>Amara O.</h3>
+                <span>Prospective customer</span>
+            </article>
+
+            <article class="testimonial-card">
+                <p>
+                    "The consultation makes it easier to think about
+                    what my skin needs and which products may suit me."
+                </p>
+                <h3>Chioma E.</h3>
+                <span>Prospective customer</span>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#home" class="logo">Glow<span>Pure</span></a>
+
+        <p>Gentle skincare. Naturally you.</p>
+
+       
+<a
+    href="https://chat.whatsapp.com/CdUvjLM4SffAfRHIz82rDT?s=cl&p=i&ilr=4&iam=0"
+    class="whatsapp-btn"
+    id="whatsapp-link"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    Join Our WhatsApp Community
+</a>
+
+
+        <p class="copyright">
+            &copy; 2026 GlowPure. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
